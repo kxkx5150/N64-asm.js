@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>N64-asm.js</title>
+    <link href="css/style.css" rel="stylesheet" />
     <script src="stats.min.js"></script>
   </head>
   <body>
-    <input type="file" id="file_input">
+    <div class="ctrl_div">
+      <input type="file" id="file_input" />
+    </div>
     <div class="emscripten" id="status">Downloading...</div>
     <div class="spinner" id="spinner"></div>
     <progress value="0" max="100" id="progress" hidden="1"></progress>
     <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
     <script src="module.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 
     <script>
       (function () {
@@ -33,6 +37,5 @@
       script.src = "index.js";
       document.body.appendChild(script);
     </script>
-
   </body>
 </html>
