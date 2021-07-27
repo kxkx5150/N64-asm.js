@@ -1,4 +1,8 @@
 Module.fetchFile = function () {};
+var request = indexedDB.deleteDatabase('/roms');
+request.onsuccess = function(event){
+  console.log('Clear Rom Database'); 
+}
 window.addEventListener("load",function(){
   document.getElementById("file_input").addEventListener("change", function (e) {
     let url = URL.createObjectURL(e.target.files[0]);
