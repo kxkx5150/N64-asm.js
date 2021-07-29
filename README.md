@@ -35,4 +35,4 @@ https://kxkx5150.github.io/N64-asm.js/
 <br><br><br><br>
 
 N64-asm.js is based on mupen64plus-web  
- https://github.com/johnoneil/mupen64plus-web.git
+ https://github.com/johnoneil/mupen64plus-web
